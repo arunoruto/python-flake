@@ -9,6 +9,7 @@
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
+    pythonVersion = "python311";
     packages = ps: with ps; [
       matplotlib
       numba
@@ -24,8 +25,8 @@
   {
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = [
-        pkgs.python3
-        (pkgs.python3.withPackages packages)
+        pkgs.${pythonVersion}
+        (pkgs.${pythonVersion}.withPackages packages)
       ];
 
       shellHook = ''
