@@ -28,7 +28,7 @@
         (pkgs.python3.withPackages packages)
       ];
 
-      shelHook = ''
+      shellHook = ''
         echo "Python Env"
       '';
     };
