@@ -13,12 +13,14 @@
     packages = ps: with ps; [
       matplotlib
       numba
+      numba-scipy
       numpy
       opencv4
       pandas
       pillow
       requests
       scikit-image
+      scipy
       streamlit
     ];
   in
