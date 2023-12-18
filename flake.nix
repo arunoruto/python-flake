@@ -18,6 +18,7 @@
       opencv4
       pandas
       pillow
+      plotly
       requests
       scikit-image
       scipy
