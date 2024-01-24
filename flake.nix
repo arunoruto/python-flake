@@ -11,6 +11,7 @@
     pkgs = nixpkgs.legacyPackages.${system};
     pythonVersion = "python311";
     packages = ps: with ps; [
+      flask
       matplotlib
       numba
       numba-scipy
@@ -23,6 +24,7 @@
       scikit-image
       scipy
       streamlit
+      qrcode
     ];
   in
   {
