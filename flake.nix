@@ -24,7 +24,7 @@
       requests
       scikit-image
       scipy
-      streamlit
+      #streamlit
       qrcode
     ];
   in
