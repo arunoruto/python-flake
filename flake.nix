@@ -11,6 +11,7 @@
     pkgs = nixpkgs.legacyPackages.${system};
     pythonVersion = "python311";
     packages = ps: with ps; [
+      dash
       flask
       matplotlib
       numba
