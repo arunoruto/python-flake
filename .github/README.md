@@ -9,3 +9,5 @@ use flake "github:arunoruto/python-flake"
 Afterward, execute `direnv allow` for the env to be loaded.
 
 For more information about [poetry2nix](https://github.com/nix-community/poetry2nix) visit the site.
+
+[devenv](https://devenv.sh/) has some more information about environment files.
