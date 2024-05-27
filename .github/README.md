@@ -6,4 +6,6 @@ To use this flake in a folder, include the following line inside your `.envrc` f
 use flake "github:arunoruto/python"
 ```
 
-Afterwards, execute `direnv allow` for the env to be loaded.
+Afterward, execute `direnv allow` for the env to be loaded.
+
+For more information about [poetry2nix](https://github.com/nix-community/poetry2nix) visit the site.
