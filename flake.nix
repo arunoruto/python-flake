@@ -43,7 +43,7 @@
         pkgs.zlib
       ];
 
-      LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.lib.makeLibraryPath buildInputs}:$LD_LIBRARY_PATH";
+      LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.lib.makeLibraryPath [pkgs.zlib]}:$LD_LIBRARY_PATH";
 
       shellHook = ''
         echo "Python Env"
