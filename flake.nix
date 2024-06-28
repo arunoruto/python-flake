@@ -49,7 +49,7 @@
 
       shellHook = ''
         export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:$LDLIBRARY_PATH
-        export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [pkgs.ulib]}:$LDLIBRARY_PATH
+        export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [pkgs.zlib]}:$LDLIBRARY_PATH
         export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
         echo "Python Env"
       '';
