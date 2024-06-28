@@ -44,12 +44,12 @@
       ];
 
       #LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.lib.makeLibraryPath [pkgs.zlib]}:$LD_LIBRARY_PATH";
-      # https://github.com/python-poetry/poetry/issues/8623#issuecomment-1793624371
       #PYTHON_KEYRING_BACKEND = "keyring.backends.null.Keyring";
 
       shellHook = ''
         export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:''$LD_LIBRARY_PATH
         export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [pkgs.zlib]}:''$LD_LIBRARY_PATH
+        # https://github.com/python-poetry/poetry/issues/8623#issuecomment-1793624371
         export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
         echo "Python Env"
       '';
