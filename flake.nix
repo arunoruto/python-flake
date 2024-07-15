@@ -41,6 +41,7 @@
         pkgs.${pythonVersion}
         (pkgs.${pythonVersion}.withPackages packages)
         pkgs.zlib
+        pkgs.pandoc
       ];
 
       #LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.lib.makeLibraryPath [pkgs.zlib]}:$LD_LIBRARY_PATH";
